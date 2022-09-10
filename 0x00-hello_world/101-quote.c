@@ -1,7 +1,7 @@
 #include <unistd.h>
 /**
  * main = Print text
- *
+ * desctiption: This project print a quote
  * Return: 1
  */
 int main(void)
