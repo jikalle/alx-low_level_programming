@@ -3,7 +3,7 @@
 #include <time.h>
 /**
  * main - Entry
- * Return: 0
+ * Return 0
  */
 int main(void)
 {
@@ -18,6 +18,7 @@ int main(void)
 	putchar(' ');
 	}
 	}
-	putchar('\n')'
+	putchar('\n');
+
 	return (0);
-}
+}	
