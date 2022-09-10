@@ -1,7 +1,8 @@
 #include <unistd.h>
 /**
  * main = Print text
- * Return 1
+ *
+ * Return: 1
  */
 int main(void)
 {
