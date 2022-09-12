@@ -1,4 +1,4 @@
-/**
+/*
  * File: 101-quote.c
  * AUTH: Shehu Usman
  */
@@ -7,8 +7,6 @@
 #include <unistd.h>
 /**
  * main = program that prints exactly and that piece of art is useful
- * " - Dora Korpar, 2015-10-19, followed by a new line, to the
- * standard error.e"
  * Return: 1
  */
 int main(void)
