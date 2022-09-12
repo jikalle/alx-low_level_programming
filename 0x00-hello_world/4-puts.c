@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
- * main-servers as the entry point for the program
- *
- * return xero if no errors else return non-zero value
+ * main - program that prints  "Programming is like building a multilingual puzzle"
+ * Return: 0
  */
 int main(void)
 {
