@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - puts project to print all combinations of single digits
+ * main - putcha program that prints all possible combinations of single-digit numbers
  * Description: The project print all combinationsl of single-digit
  * Return 0
  */
