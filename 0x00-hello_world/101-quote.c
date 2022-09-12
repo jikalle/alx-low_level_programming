@@ -6,7 +6,7 @@
 
 #include <unistd.h>
 /**
- * main = program that prints exactly and that piece of art is useful
+ * main = puts program that prints exactly and that piece of art is useful
  * Return: 1
  */
 int main(void)
