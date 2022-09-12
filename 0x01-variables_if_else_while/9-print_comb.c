@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Entry
+ * main - puts project to print all combinations of single digits
  * Description: The project print all combinationsl of single-digit
  * Return 0
  */
