@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Print combination of two of 2-digit number
- * Return 0
+ * main - program that prints all possible combinations of two-digit
+ * Return: 0
  */
 int main(void)
 {
