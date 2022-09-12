@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <time.h>
 /**
- * main - Print combination of 3 digits
+ * main - program that prints all possible different combinations of three digit
  * Return 0
  */
 int main(void)
