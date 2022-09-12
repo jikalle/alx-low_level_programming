@@ -3,6 +3,7 @@
 #include <time.h>
 /**
  * main - Entry
+ * Description: The project print all combinationsl of single-digit
  * Return 0
  */
 int main(void)
