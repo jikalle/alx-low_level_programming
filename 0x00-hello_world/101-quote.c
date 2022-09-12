@@ -1,4 +1,4 @@
-/*
+/**
  * File: 101-quote.c
  * AUTH: Shehu Usman
  */
