@@ -3,9 +3,9 @@
  * main - Program that prints _putchar backed by newline
  * Return: 0 Always
  */
-int _putcha(void)
+int _putchar(void)
 {
-	printf("_putchar\n");
+	putchar("_putchar\n");
 
 	return 0;
 }
