@@ -1,8 +1,35 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@jikalle 
+Maryann529
+/
+alx-low_level_programming
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+alx-low_level_programming/0x03-debugging/3-print_remaining_days.c
+@Maryann529
+Maryann529 print_remaining
+Latest commit bb1f33a on Mar 16
+ History
+ 1 contributor
+Executable File  37 lines (34 sloc)  740 Bytes
+
 #include <stdio.h>
 #include "main.h"
 
 /**
- * print_remaining_days - takes a date and prints how many days
+ * print_remaining_days - takes a date and prints how many days are
  * left in the year, taking leap years into account
  * @month: month in number format
  * @day: day of month
@@ -12,12 +39,13 @@
 
 void print_remaining_days(int month, int day, int year)
 {
-	if ((year % 100 == 0 && year % 400 == 0) || (year % 4 == 0))
+	if ((year % 4 == 0) && (year % 400 == 0 || year % 100 != 0))
 	{
-		if (month > 2 && day >= 60)
+		if (month >= 3 && day >= 60)
 		{
 			day++;
 		}
+
 		printf("Day of the year: %d\n", day);
 		printf("Remaining days: %d\n", 366 - day);
 	}
@@ -25,12 +53,12 @@ void print_remaining_days(int month, int day, int year)
 	{
 		if (month == 2 && day == 60)
 		{
-			printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year)
+			printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year);
 		}
 		else
 		{
-			printf("Day of the year: %d\n", day);
-			printf("Remaining days: %d\n", 365 - day);
+			 printf("Day of the year: %d\n", day);
+			 printf("Remaining days: %d\n", 365 - day);
 		}
 	}
 }
