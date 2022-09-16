@@ -2,6 +2,7 @@
 #include "main.h"
 /**
  * print_numbers - prints the digits 1-9
+ * Return: void
  */
 void print_numbers(void)
 {
