@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * _isdigit - check wether digit is number of none
- * Return: 1 if c is digit, else 0
+ * Return: 0
  */
 int _isdigit(int c)
 {
