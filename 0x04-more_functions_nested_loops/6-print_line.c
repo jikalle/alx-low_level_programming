@@ -1,7 +1,10 @@
+#include <stdio.h>
 #include "main.h"
+
 /**
- * print_line - draws a straight line (n) characters long.
+ * print_line - draws a straight line characters long.
  * @n: the number of underscores to print.
+ * Return: void
  */
 void print_line(int n)
 {
