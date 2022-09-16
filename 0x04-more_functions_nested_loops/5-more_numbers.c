@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * more_numbers - prints the range 0-14 ten times.
- * Return: nothing.
+ * Return: void
  */
 void more_numbers(void)
 {
@@ -14,8 +14,9 @@ void more_numbers(void)
 		{
 			if (j >= 10)
 				_putchar(j / 10 + '0');
-			_putchar(j % 10 + '0');
-			++j;
+			else
+				_putchar(j % 10 + '0');
+				++j;
 		}
 		_putchar('\n');
 		j = 0;
