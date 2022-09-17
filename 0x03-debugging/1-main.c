@@ -2,7 +2,6 @@
 
 /**
  * main - Debugging Infinte loop avoided \\o/
- * @\\o/: Printing infinite
  * Return: 0 Always
  */
 
