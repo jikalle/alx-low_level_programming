@@ -3,15 +3,20 @@
 #include "main.h"
 
 /**
- * main: store string and output with the _puts character
- * _puts: prints the string
+ * _puts - prints the string
+ * @str: string to print
+ *
  * Return: 0
  */
-int main(void)
+int _puts(char *str)
 {
-	char *str;
+	int count = 0;
 
-	str = "I do not fear computers. I fear the lack of them - Isaac Asimov"'
-	_puts(str);
-	return (0);
+	while (*(str + count) != '\0')
+	{
+		if (*(str + count) != '"')
+			_putchar(*(str + count));
+	count++;
+	}
+	_putchar('\n');
 }
