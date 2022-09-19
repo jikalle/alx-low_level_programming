@@ -8,15 +8,11 @@
  *
  * Return: 0
  */
-int _puts(char *str)
+void _puts(char *str)
 {
-	int count = 0;
+	while (*str != '\0')
+		_putchar(*str + 0);
+		str++;
 
-	while (*(str + count) != '\0')
-	{
-		if (*(str + count) != '"')
-			_putchar(*(str + count));
-	count++;
-	}
 	_putchar('\n');
 }
