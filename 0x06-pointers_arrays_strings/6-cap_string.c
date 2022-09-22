@@ -13,12 +13,12 @@ char *cap_string(char *s)
 
 /* scan through string */
 	count = 0;
-	while (s[count] != '\o')
+	while (s[count] != '\0')
 	{
 		/* if next char after count is char, capitalize it */
 		if (s[0] >= 97 && s[0] <= 122)
 		{
-			s[s0] = s[0] - 32;
+			s[0] = s[0] - 32;
 		}
 		if (s[count] == ' ' || s[count] == '\t' || s[count] == '\n'
 			|| s[count] == ',' || s[count] == ';' || s[count] == '.'
