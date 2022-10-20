@@ -1,52 +1,50 @@
-#include <stdlib.h> 
- #include <string.h> 
- #include "lists.h" 
-  
- /** 
-  * add_node_end - function that adds a new node at the end of a list_t list 
-  * @head: Const double pointer of structure list_t for beginning 
-  * @str: Const char pointer for data to be added 
-  * Return: List with new node for list_t list, NULL if failed 
-  */ 
-  
- list_t *add_node_end(list_t **head, const char *str) 
- { 
-  
-         unsigned int i; 
-         list_t *new; 
-         list_t *temp; 
-  
-         new  = malloc(sizeof(list_t)); 
-  
-         if (str == NULL) 
-                 return (NULL); 
-  
-         if (new == NULL) 
-                 return (NULL); 
-  
-         for (i = 0; str[i]; i++) 
-                 ; 
-  
-         if (*head == NULL) 
-         { 
-                 *head = new; 
-                 new->len = i; 
-                 new->str = strdup(str); 
-                 new->next = NULL; 
-                 return (new); 
-         } 
-  
-         temp = *head; 
-  
-         while (temp->next != NULL) 
-                 temp = temp->next; 
-  
-         temp->next = new; 
-  
-         new->len = i; 
-         new->str = strdup(str); 
-         new->next = NULL; 
-  
-         return (new); 
-  
- }
+#include "lists.h"
+/**
+ * _strlen - returns the length of a string
+ * @s: string s
+ * Return: length of string
+ */
+int _strlen(char *s)
+{
+	char *p = s;
+
+	while (*s)
+		s++;
+	return (s - p);
+}
+/**
+ * add_node_end - adds a new node at the end of a list_t list;
+ * @head: reference to head of list
+ * @str: string to be added to linked list
+ * Return: address of new node
+ */
+list_t *add_node_end(list_t **head, const char *str)
+{
+	list_t *newNode;
+	list_t *last = *head;
+	char *newStr;
+
+	if (!str)
+		return (NULL);
+	newNode = malloc(sizeof(list_t));
+	if (!newNode)
+		return (NULL);
+	newStr = strdup(str);
+	if (!newStr)
+	{
+		free(newNode);
+		return (NULL);
+	}
+	newNode->len = _strlen(newStr);
+	newNode->str = newStr;
+	newNode->next = NULL;
+	if (!*head)
+	{
+		*head = newNode;
+		return (newNode);
+	}
+	while (last->next)
+		last = last->next;
+	last->next = newNode;
+	return (last);
+}
